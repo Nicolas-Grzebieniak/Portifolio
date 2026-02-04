@@ -9,17 +9,55 @@
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Olá, eu sou <span>Nicolas</span></h1>
-    <p>Estudante de Engenharia de Software <br> Desenvolvedor Web & Back-end</p>
+ <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Nicolas</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+ </nav>
+
+
+  <header class="hero" id="home">
+     <div class="hero-text">
+    <h1>Hi, I am <span>Nicolas</span></h1>
+
+    <h2>Full Stack Developer</h2>
+
+    <p>
+      Working with programming since 2020, with six years of experience 
+      studying complex and diverse systems,<br>
+      making the most of each one.
+    </p>
 
     <div class="hero-buttons">
-      <a href="#projects" class="btn">Ver Projetos</a>
-      <a href="https://github.com/SEU_GITHUB" target="_blank" class="btn outline">GitHub</a>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="https://github.com/SEU_GITHUB" target="_blank" class="btn outline">LinkedIn</a>
     </div>
+   </div>
+
+   <!-- FOTO -->
+
+   
+   <div class="hero-photo">
+    <div class="photo-ring">
+      <img src="/assets/placeholder.jpg" alt="Foto de Nicolas" class="profile-img">
+    </div>
+  
+    <div class="scroll-down">
+      <span></span>
+    </div>
+
   </header>
 
-  <section class="about">
+  <section class="about" id="about">
     <h2>Sobre mim</h2>
     <p>
       Sou estudante de Engenharia de Software, apaixonado por desenvolvimento web.
@@ -54,7 +92,7 @@
     </div>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2>Habilidades</h2>
     <ul>
       <li>JavaScript</li>
@@ -65,7 +103,7 @@
     </ul>
   </section>
 
-  <footer class="contact">
+  <footer class="contact" id="contact">
     <h2>Contato</h2>
     <p>
       <a href="https://github.com/SEU_GITHUB" target="_blank">GitHub</a> |
@@ -74,6 +112,6 @@
     </p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

@@ -4,12 +4,37 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #0f172a;
   color: #e5e7eb;
   line-height: 1.6;
+
+  background: linear-gradient(
+    -45deg,
+    #020617,
+    #020617,
+    #0f172a,
+    #020617
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 18s ease infinite;
 }
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
 
 a {
   color: inherit;
@@ -19,16 +44,45 @@ a {
 .hero {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px;
+  flex-direction: row;          /* <<< lado a lado */
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 190px 20px 60px;
+  gap: 80px;
+  background: transparent;
+  
+
+  text-align: left;
 }
 
-.hero h1 {
-  font-size: 3rem;
+
+.hero-text {
+  max-width: 600px;
+  order: 1;
 }
+
+.hero-photo {
+  flex-shrink: 0;
+  margin-top: -10px;
+  order: 2;
+}
+
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 4px;
+}
+
+.hero h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 0;      
+  margin-bottom: 12px;
+  color: #cbd5f5;
+}
+
 
 .hero h1 span {
   color: #38bdf8;
@@ -42,22 +96,170 @@ a {
 
 .hero-buttons {
   display: flex;
-  gap: 15px;
+  gap: 16px;
+  margin-top: 28px; 
 }
 
+
 .btn {
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #38bdf8;
   color: #0f172a;
-  font-weight: 600;
 }
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.35);
+}
+
 
 .btn.outline {
   background: transparent;
   border: 2px solid #38bdf8;
   color: #38bdf8;
 }
+
+.btn.outline:hover {
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  position: relative;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  transition: color 0.25s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.nav-links a.active {
+  color: #38bdf8;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-down span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid #38bdf8;
+  border-right: 2px solid #38bdf8;
+  transform: rotate(45deg);
+}
+
+.scroll-down span {
+  animation: arrowBounce 1.5s infinite;
+}
+
+@keyframes arrowBounce {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0, 0);
+  }
+}
+
+.profile-img {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
 
 section {
   padding: 80px 10%;
