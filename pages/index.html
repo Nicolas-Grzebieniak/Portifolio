@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nicolas | Portfólio</title>
   <link rel="stylesheet" href="/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
  <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-logo">Nicolas</div>
+      <div class="nav-logo">N</div>
 
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -39,7 +41,7 @@
 
     <div class="hero-buttons">
       <a href="#projects" class="btn">View My Work</a>
-      <a href="https://github.com/SEU_GITHUB" target="_blank" class="btn outline">LinkedIn</a>
+      <a href="https://github.com/SEU_GITHUB" target="_blank" class="btn outline">GitHub</a>
     </div>
    </div>
 
@@ -58,12 +60,51 @@
   </header>
 
   <section class="about" id="about">
-    <h2>Sobre mim</h2>
-    <p>
-      Sou estudante de Engenharia de Software, apaixonado por desenvolvimento web.
-      Tenho foco em JavaScript, Node.js e criação de aplicações práticas,
-      sempre buscando escrever código limpo e bem estruturado.
-    </p>
+   <h2 class="section-title">About Me</h2>
+
+    <div class="about-grid">
+      <!-- Coluna de texto -->
+      <div class="about-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        </p>
+
+        <p>
+          at, tempus vitae justo. Quisque quam tellus, dignissim nec ullamcorper rhoncus
+          at, tempus vitae justo. Quisque quam tellus, dignissim nec ullamcorper rhoncus
+          at, tempus vitae justo. Quisque quam tellus, dignissim nec ullamcorper rhoncus
+        </p>
+
+        <p>
+          at, tempus vitae justo. Quisque quam tellus, dignissim nec ullamcorper rhoncus
+          at, tempus vitae justo. Quisque quam tellus, dignissim nec ullamcorper rhoncus
+        </p>
+      </div>
+
+      <!-- Coluna de cards -->
+      <div class="about-cards">
+        <div class="about-card">
+          <h3>Education</h3>
+          <p><strong>Information Systems Bachelor's Degree</strong><br>PUCPR University | 2025 – Present</p>
+          <p><strong>Technical High School in Computer Science</strong><br>TECPUC | 2020 – 2022</p>
+          <p><strong>Undergraduate studies in Architecture and Urbanism</strong><br>PUCPR University | 2023 – 2024</p>
+        </div>
+
+        <div class="about-card">
+          <h3>Achievements</h3>
+          <ul>
+            <li>Vice President of the Information Systems Student Association</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h3>Location</h3>
+          <p>Curitiba, Brazil</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="projects" id="projects">
