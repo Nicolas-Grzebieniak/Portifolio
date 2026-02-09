@@ -18,10 +18,10 @@ body {
 
   background: linear-gradient(
     -45deg,
+    #020617,   /* quase preto */
+    #0f172a,   /* azul escuro */
     #020617,
-    #020617,
-    #0f172a,
-    #020617
+    #1e293b    /* azul mais vivo */
   );
   background-size: 400% 400%;
   animation: gradientBG 18s ease infinite;
@@ -304,13 +304,13 @@ a {
 
 
 .about {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 60px;
 }
 
@@ -366,7 +366,7 @@ section h2 {
 }
 
 .about p {
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .projects-grid {
@@ -414,6 +414,251 @@ section h2 {
   padding: 10px 20px;
   border-radius: 20px;
 }
+
+.skills {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.skills-table {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.skills-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skills-table thead {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.skills-table th {
+  padding: 16px 24px;
+  text-align: left;
+  font-weight: 600;
+  color: #38bdf8;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-table td {
+  padding: 20px 24px;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills-table tr:last-child td {
+  border-bottom: none;
+}
+
+.skills-table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.skills-table tbody tr:hover {
+  background: rgba(56, 189, 248, 0.05);
+}
+
+.skills-table td:first-child {
+  font-weight: 600;
+  color: #cbd5e1;
+  width: 200px;
+}
+
+.skills-table td:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Cores das badges */
+.badge-js {
+  background: #f0db4f;
+  color: #323330;
+}
+
+.badge-python {
+  background: #3776ab;
+  color: #fff;
+}
+
+.badge-java {
+  background: #007396;
+  color: #fff;
+}
+
+.badge-html {
+  background: #e34c26;
+  color: #fff;
+}
+
+.badge-css {
+  background: #264de4;
+  color: #fff;
+}
+
+.badge-react {
+  background: #61dafb;
+  color: #20232a;
+}
+
+.badge-mysql {
+  background: #00758f;
+  color: #fff;
+}
+
+.badge-git {
+  background: #f05032;
+  color: #fff;
+}
+
+.badge-github {
+  background: #181717;
+  color: #fff;
+}
+
+.badge-vscode {
+  background: #007acc;
+  color: #fff;
+}
+
+.badge-pycharm {
+  background: #21d789;
+  color: #000;
+}
+
+.badge-intellij {
+  background: #000000;
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .skills-table td:first-child {
+    width: auto;
+    display: block;
+    border-bottom: none;
+    padding-bottom: 8px;
+  }
+  
+  .skills-table td:last-child {
+    display: flex;
+    padding-top: 8px;
+  }
+}
+
+
+
+
+.certificates {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.certificate-card {
+  padding: 32px;
+  border-radius: 16px;
+  
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 15px 40px rgba(56, 189, 248, 0.2);
+}
+
+.cert-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 4px 8px rgba(56, 189, 248, 0.3));
+}
+
+.certificate-card h3 {
+  font-size: 1.3rem;
+  color: #f1f5f9;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.cert-issuer {
+  color: #38bdf8;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.cert-date {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.cert-link {
+  display: inline-block;
+  color: #38bdf8;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cert-link:hover {
+  color: #0ea5e9;
+  transform: translateX(4px);
+}
+
+.cert-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+  margin-top: 2px;
+}
+
+.cert-link:hover::after {
+  width: 100%;
+}
+
 
 .contact {
   text-align: center;
