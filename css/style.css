@@ -643,6 +643,7 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 30px;
+  max-width: 500px;
 }
 
 .project-card {
@@ -720,6 +721,8 @@ section h2 {
   flex-wrap: wrap;
   gap: 10px;
 }
+
+
 
 
 /* ========================
