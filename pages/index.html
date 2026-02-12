@@ -1,20 +1,23 @@
+Index · HTML
+Copiar
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicolas Grzebieniak</title>
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
- <nav class="navbar">
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">N</div>
-
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -24,71 +27,67 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
- </nav>
+  </nav>
 
 
+  <!-- ======================== HERO ======================== -->
   <header class="hero" id="home">
-     <div class="hero-text">
-    <h1>Hi, I am <span>Nicolas</span></h1>
-
-    <h2>Full Stack Developer</h2>
-
-    <p>
-      Working with programming since 2020, with six years of experience 
-      studying complex and diverse systems,<br>
-      making the most of each one.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="https://github.com/Nicolas-Grzebieniak" target="_blank" class="btn outline">GitHub</a>
-    </div>
-   </div>
-
-   <!-- FOTO -->
-
-   
-   <div class="hero-photo">
-    <div class="photo-ring">
-      <img src="/assets/placeholder.jpg" alt="Foto de Nicolas" class="profile-img">
-    </div>
-  
-    <div class="scroll-down">
-      <span></span>
+    <div class="hero-text">
+      <h1>Hi, I am <span>Nicolas</span></h1>
+      <h2>Full Stack Developer</h2>
+      <p>
+        Working with programming since 2020, with six years of experience
+        studying complex and diverse systems,<br>
+        making the most of each one.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="https://github.com/Nicolas-Grzebieniak" target="_blank" class="btn outline">GitHub</a>
+      </div>
     </div>
 
+    <div class="hero-photo">
+      <div class="photo-ring">
+        <img src="/assets/placeholder.jpg" alt="Foto de Nicolas" class="profile-img" />
+      </div>
+      <div class="scroll-down">
+        <span></span>
+      </div>
+    </div>
   </header>
 
+
+  <!-- ======================== ABOUT ======================== -->
   <section class="about" id="about">
-   <h2 class="section-title">About Me</h2>
+    <h2 class="section-title">About Me</h2>
 
     <div class="about-grid">
-      <!-- Coluna de texto -->
+
+      <!-- Texto -->
       <div class="about-text">
         <p>
-         My name is Nicolas, I am 21 years old, a naturalized Brazilian, and fluent in English.
-         I have been working with programming for <b>six years</b>. In 2020, I began a technical high school program at PUCPR (TECPUC),
-         where my interest in technology and software development grew even stronger.  
+          My name is Nicolas, I am 21 years old, a naturalized Brazilian, and fluent in English.
+          I have been working with programming for <b>six years</b>. In 2020, I began a technical high school
+          program at PUCPR (TECPUC), where my interest in technology and software development grew even stronger.
         </p>
-
         <p>
-          Since studying Architecture and Urbanism, I have been driven by the idea of <b>making the world a slightly better
-          place by building solutions that genuinely help people</b>. Although the course itself did not align with my long-term goals,
-          this mindset stayed with me.
+          Since studying Architecture and Urbanism, I have been driven by the idea of <b>making the world a slightly
+          better place by building solutions that genuinely help people</b>. Although the course itself did not align
+          with my long-term goals, this mindset stayed with me.
         </p>
-
         <p>
           In 2025, I joined the Information Systems program, where I <b>truly found my professional path</b>.
-          Since then, I have been developing increasingly meaningful projects, focusing on quality, scalability, and real-world impact.
+          Since then, I have been developing increasingly meaningful projects, focusing on quality, scalability,
+          and real-world impact.
         </p>
-
         <p>
-          Beyond code, I bring a <b>strong artistic and critical perspective</b> to everything I build. In my free time, I prefer to stay away
-          from social media and focus on activities such as reading, traveling, painting, photography, and writing.
+          Beyond code, I bring a <b>strong artistic and critical perspective</b> to everything I build. In my free time,
+          I prefer to stay away from social media and focus on activities such as reading, traveling, painting,
+          photography, and writing.
         </p>
       </div>
 
-      <!-- Coluna de cards -->
+      <!-- Cards -->
       <div class="about-cards">
         <div class="about-card">
           <h3>Education</h3>
@@ -109,132 +108,142 @@
           <p>Curitiba, Brazil</p>
         </div>
       </div>
+
     </div>
   </section>
 
 
- <section class="skills" id="skills">
-  <h2 class="section-title">Skills & Technologies</h2>
-  
-  <div class="skills-table">
-    <table>
-      <thead>
-        <tr>
-          <th>Category</th>
-          <th>Skills</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Languages</td>
-          <td>
+  <!-- ======================== SKILLS ======================== -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills & Technologies</h2>
+
+    <div class="skills-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Languages</td>
+            <td>
+              <span class="badge badge-js">JavaScript</span>
+              <span class="badge badge-python">Python</span>
+              <span class="badge badge-java">Java</span>
+              <span class="badge badge-html">HTML5</span>
+              <span class="badge badge-css">CSS3</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Frameworks</td>
+            <td>
+              <span class="badge badge-react">React</span>
+              <span class="badge badge-node">Node.js</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Databases</td>
+            <td>
+              <span class="badge badge-mysql">MySQL</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Versioning</td>
+            <td>
+              <span class="badge badge-git">Git</span>
+              <span class="badge badge-github">GitHub</span>
+            </td>
+          </tr>
+          <tr>
+            <td>IDE & Environments</td>
+            <td>
+              <span class="badge badge-vscode">VSCode</span>
+              <span class="badge badge-pycharm">PyCharm</span>
+              <span class="badge badge-intellij">IntelliJ</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- ======================== CERTIFICATES ======================== -->
+  <section class="certificates" id="certificates">
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificates-grid">
+
+      <div class="certificate-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Fundamentals of JavaScript</h3>
+        <p class="cert-issuer">Alura</p>
+        <p class="cert-date">February 2026</p>
+        <a href="/assets/certificados/Nicolas Jacinto Grzebieniak de Oliveira - Course JavaScript_ Learning to Program - Alura.pdf"
+           class="cert-link" target="_blank">View Certificate →</a>
+      </div>
+
+      <div class="certificate-card">
+        <div class="cert-icon">⭐</div>
+        <h3>Certificate of Recognition</h3>
+        <p class="cert-issuer">PUCPR</p>
+        <p class="cert-date">May 2025</p>
+        <a href="/assets/certificados/certificados de reconhecimento.pdf"
+           class="cert-link" target="_blank">View Certificate →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-cover">
+          <img src="/assets/projetos/cwb logo.png" alt="CWB+" />
+        </div>
+        <div class="project-info">
+          <h3>CWB+</h3>
+          <p>
+            CWB+ is a public safety application that allows users to view, report, and track
+            risk-related incidents in Curitiba, such as robberies, thefts, and traffic accidents.
+          </p>
+          <p>
+            The platform leverages geolocation to display high-risk areas on an interactive map,
+            providing real-time alerts about potential dangers near the user's location. In addition,
+            the system enables anonymous reporting with image uploads, community-based incident
+            validation, and a personal history of submitted reports.
+          </p>
+
+          <div class="project-meta">
+            <p><strong>APIs:</strong> Leaflet.js</p>
+            <p>
+              <strong>Motivation:</strong> The project emerged from the need to democratize access
+              to public safety information and empower people to make safer decisions in unfamiliar
+              areas of Curitiba.
+            </p>
+          </div>
+
+          <div class="project-tags">
             <span class="badge badge-js">JavaScript</span>
-            <span class="badge badge-python">Python</span>
-            <span class="badge badge-java">Java</span>
+            <span class="badge badge-leaflet">Leaflet.js</span>
             <span class="badge badge-html">HTML5</span>
             <span class="badge badge-css">CSS3</span>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Frameworks</td>
-          <td>
-            <span class="badge badge-react">React</span>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Databases</td>
-          <td>
-            <span class="badge badge-mysql">MySQL</span>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Versioning</td>
-          <td>
-            <span class="badge badge-git">Git</span>
-            <span class="badge badge-github">GitHub</span>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>IDE & Environments</td>
-          <td>
-            <span class="badge badge-vscode">VSCode</span>
-            <span class="badge badge-pycharm">PyCharm</span>
-            <span class="badge badge-intellij">IntelliJ</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
- </section>
-
- <section class="certificates" id="certificates">
-  <h2 class="section-title">Certificates</h2>
-  
-  <div class="certificates-grid">
-    
-    <div class="certificate-card">
-      <div class="cert-icon">🎓</div>
-      <h3>Fundamentals of JavaScript</h3>
-      <p class="cert-issuer">Alura</p>
-      <p class="cert-date"> February 2026</p>
-      <a href="/assets/certificados/Nicolas Jacinto Grzebieniak de Oliveira - Course JavaScript_ Learning to Program - Alura.pdf" class="cert-link" target="_blank">View Certificate →</a>
-    </div>
-
-    <div class="certificate-card">
-      <div class="cert-icon">⭐</div>
-      <h3>Certificate of Recognition</h3>
-      <p class="cert-issuer">PUCPR</p>
-      <p class="cert-date">May 2025</p>
-      <a href="/assets/certificados/certificados de reconhecimento.pdf" class="cert-link" target="_blank">View Certificate →</a>
-    </div>
-
-    <!-- Adicione mais certificados conforme necessário -->
-    
-  </div>
- </section>
-
- <section class="projects" id="projects">
-  <h2 class="section-title">Projects</h2>
-
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <div class="project-cover">
-        <img src="/assets/projetos/cwb logo.png" alt="Mapa de Denúncias">
-      </div>
-      <div class="project-info">
-        <h3>CWB+</h3>
-        <p>CWB+ is a public safety application that allows users to view, report, and track risk-related incidents in Curitiba,
-         such as robberies, thefts, and traffic accidents.</p>
-
-        <p>The platform leverages geolocation to display high-risk areas on an interactive map, providing real-time alerts about potential dangers near the user’s location.
-         In addition, the system enables anonymous reporting with image uploads,
-         community-based incident validation, and a personal history of submitted reports.</p>
-
-        <div class="project-meta">
-          <p><strong>APIs:</strong> Leaflet.js</p>
-          <p><strong>Motivation:</strong> The project emerged from the need to democratize access to public safety information
-           and empower people to make safer decisions in unfamiliar areas of Curitiba.</p>
-        </div>
-
-        <div class="project-tags">
-          <span class="badge badge-js">JavaScript</span>
-          <span class="badge badge-leaflet">Leaflet.js</span>
-          <span class="badge badge-html">HTML5</span>
-          <span class="badge badge-css">CSS3</span>
+          </div>
         </div>
       </div>
+
     </div>
-
-  </div>
- </section>
+  </section>
 
 
-
+  <!-- ======================== CONTACT ======================== -->
   <footer class="contact" id="contact">
     <h2>Contact</h2>
     <p>
