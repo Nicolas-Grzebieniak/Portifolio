@@ -18,10 +18,10 @@ body {
 
   background: linear-gradient(
     -45deg,
-    #020617,   /* quase preto */
-    #0f172a,   /* azul escuro */
     #020617,
-    #1e293b    /* azul mais vivo */
+    #0f172a,
+    #020617,
+    #1e293b
   );
   background-size: 400% 400%;
   animation: gradientBG 18s ease infinite;
@@ -39,14 +39,11 @@ p {
   font-weight: 400;
 }
 
-
-
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 
 a {
   color: inherit;
@@ -220,9 +217,6 @@ a {
   border-bottom: 2px solid #38bdf8;
   border-right: 2px solid #38bdf8;
   transform: rotate(45deg);
-}
-
-.scroll-down span {
   animation: arrowBounce 1.5s infinite;
 }
 
@@ -252,15 +246,9 @@ a {
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-14px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
 }
 
 .section-title {
@@ -277,14 +265,8 @@ a {
   width: 110px;
   height: 4px;
   margin: 14px auto 0;
-  background: #38bdf8;
   border-radius: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #38bdf8,
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, #38bdf8, transparent);
 }
 
 .about {
@@ -315,13 +297,10 @@ a {
 .about-card {
   padding: 24px;
   border-radius: 14px;
-  
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
   border: 1px solid rgba(255, 255, 255, 0.12);
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
@@ -426,6 +405,7 @@ section h2 {
   gap: 10px;
 }
 
+
 /* ========================
    BADGES
 ======================== */
@@ -521,21 +501,6 @@ section h2 {
   color: #fff;
 }
 
-/* Responsivo Skills */
-@media (max-width: 768px) {
-  .skills-table td:first-child {
-    width: auto;
-    display: block;
-    border-bottom: none;
-    padding-bottom: 8px;
-  }
-  
-  .skills-table td:last-child {
-    display: flex;
-    padding-top: 8px;
-  }
-}
-
 
 /* ========================
    CERTIFICATES
@@ -556,14 +521,11 @@ section h2 {
 .certificate-card {
   padding: 32px;
   border-radius: 16px;
-  
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  
   transition: all 0.4s ease;
   text-align: center;
 }
@@ -649,14 +611,11 @@ section h2 {
 .project-card {
   border-radius: 16px;
   overflow: hidden;
-  
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  
   transition: all 0.4s ease;
 }
 
@@ -722,7 +681,24 @@ section h2 {
   gap: 10px;
 }
 
+.project-meta {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 2px solid #38bdf8;
+  padding-left: 14px;
+}
 
+.project-meta p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 0;
+}
+
+.project-meta strong {
+  color: #f1f5f9;
+}
 
 
 /* ========================
@@ -733,4 +709,176 @@ section h2 {
   text-align: center;
   padding: 40px;
   background-color: #020617;
+}
+
+
+/* ========================
+   RESPONSIVIDADE - TABLET
+======================== */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 0.78rem;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 60px;
+    gap: 40px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .hero-photo {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero p br {
+    display: none;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* SECTION TITLES */
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-cards {
+    width: 100%;
+  }
+
+  /* SKILLS */
+  .skills-table td {
+    display: block;
+    padding: 12px 16px;
+  }
+
+  .skills-table td:first-child {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 6px;
+    color: #38bdf8;
+  }
+
+  .skills-table td:last-child {
+    padding-top: 6px;
+    padding-bottom: 16px;
+  }
+
+  .skills-table th {
+    padding: 12px 16px;
+  }
+
+  /* CERTIFICATES */
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact p {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+
+/* ========================
+   RESPONSIVIDADE - MOBILE
+======================== */
+
+@media (max-width: 480px) {
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.72rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .about-card {
+    padding: 18px;
+  }
+
+  .certificate-card {
+    padding: 24px;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
 }
